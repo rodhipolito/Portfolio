@@ -1,14 +1,12 @@
 footer {
-    background-color: #222;
+    background-color: var(--background-color);
     padding: 16px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-footer span{
-    font-size: 0.8em;
+footer span {
+    font-size: var(--font-size-small);
     font-weight: 200;
 }
