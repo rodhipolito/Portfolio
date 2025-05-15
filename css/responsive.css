@@ -1,54 +1,121 @@
+/* Dispositivos grandes (1200px+) - Ajustes menores */
 @media (max-width: 1200px) {
+    .main-content .text p {
+        width: 85%;
+    }
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
     main {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 8%;
+        flex-direction: column-reverse; /* Foto abaixo do conteúdo */
     }
 
     .main-content {
         width: 100%;
-        align-items: center;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     .main-content .text p {
         width: 100%;
-        font-size: 1em;
     }
 
     .techs .cards-container {
-        margin-top: 32px;
-    }
-}
-
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header nav {
-        margin-top: 24px;
-    }
-
-    header nav a {
-        font-size: 1em;
-    }
-
-    .techs .cards-container .card {
-        width: 80px;
-        height: 80px;
     }
 
     main figure img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Dispositivos móveis (até 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .techs .cards-container {
+        gap: 0.8em;
+    }
+
+    .techs .cards-container .card {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
+    }
+
+    main figure img {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer span {
+        font-size: 0.7em;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+    .main-content .text p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .techs .cards-container {
+        gap: 0.5em;
+    }
+
+    .techs .cards-container .card {
+        width: 60px;
+        height: 60px;
+    }
+
+    main figure img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Orientação paisagem em mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .main-content {
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    
+    main figure {
+        width: 35%;
+    }
+    
+    main figure img {
+        width: 150px;
+        height: 150px;
     }
 }
