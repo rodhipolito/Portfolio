@@ -1,28 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Rodrigo Hipólito - Desenvolvedor Web Full Stack">
-    <title>Portfólio - Developer Rodrigo</title>
-    <!--CSS-->
+    <title>Portfólio - Rodrigo Hipolito</title>
+    <meta name="description" content="Portfólio de Rodrigo Hipolito - Desenvolvedor Full Stack com foco em automação, integração de dados e tecnologias modernas como React, Node.js, Java.">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
-
-    <!--FONTS-->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
-    <!--ICONS-->
+    <!-- ICONS -->
     <script src="https://kit.fontawesome.com/9214705539.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
 <header>
-    <h1>Dev. Rodrigo</h1>
+    <h1>Rodrigo Hipolito</h1>
+    <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
     <nav aria-label="Redes sociais">
         <a href="https://github.com/rodhipolito" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github fa-lg"></i>
@@ -33,49 +34,28 @@
     </nav>
 </header>
 
-<main class="container">
+<main>
     <section class="main-content">
         <article class="text">
-            <h2>About me 🙋‍♂️</h2>
+            <h2>Sobre mim 🙋‍♂️</h2>
             <p>
-                Professional with experience in software development, data integration, and process automation. Skilled in SQL, Node.js, Express, and scripting with VBA for internal tools and reporting workflows. 
-                Strong understanding of ETL processes, API integration, and front-end tools like React.js. 
-                I combine business insight with technical expertise to build scalable solutions, automate processes, and support data-driven decision-making. 
-                Experienced in corporate and outsourcing environments.
+                Desenvolvedor com experiência em software, automação de processos e integração de dados. Conhecimentos sólidos em SQL, Node.js, Express, React.js e VBA para ferramentas internas e fluxos de relatório. Habilidade em processos ETL, integração com APIs e visão de negócios para soluções escaláveis e automatizadas.
             </p>
         </article>
 
         <aside class="techs">
-            <h2>Select a Technology below ⬇ 👨‍💻  </h2>
+            <h2>Escolha uma tecnologia abaixo ⬇ 👨‍💻</h2>
             <div class="cards-container">
-                <div class="card">
-                    <img src="./img/techs/html5.png" alt="Logo do HTML5">
-                </div>
-                <div class="card">
-                    <a href="https://pizzaria1.netlify.app/" target="_blank">
-                        <img src="./img/techs/css3.png" alt="Logo do CSS3">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://firstcurrencyconverter.netlify.app/" target="_blank">
-                        <img src="./img/techs/javascript.png" alt="Logo do JavaScript">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://catalogoflix.netlify.app/" target="_blank">
-                        <img src="./img/techs/logo-react-256.png" alt="Logo do React">
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7249907961072934912/" target="_blank">
-                        <img src="./img/techs/java.png" alt="Logo do Java">
-                    </a>
-                </div>
+                <div class="card"><img src="./img/techs/html5.png" alt="HTML5"></div>
+                <div class="card"><a href="https://pizzaria1.netlify.app/" target="_blank"><img src="./img/techs/css3.png" alt="CSS3"></a></div>
+                <div class="card"><a href="https://firstcurrencyconverter.netlify.app/" target="_blank"><img src="./img/techs/javascript.png" alt="JavaScript"></a></div>
+                <div class="card"><a href="https://catalogoflix.netlify.app/" target="_blank"><img src="./img/techs/logo-react-256.png" alt="React"></a></div>
+                <div class="card"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7249907961072934912/" target="_blank"><img src="./img/techs/java.png" alt="Java"></a></div>
             </div>
         </aside>
 
         <figure>
-            <img src="./img/techs/foto.png" alt="Foto de Rodrigo Hipolito">
+            <img src="./img/techs/foto.png" alt="Rodrigo Hipolito">
             <figcaption>Rodrigo Hipolito Silva</figcaption>
         </figure>
     </section>
@@ -85,19 +65,10 @@
     <span>&copy; Rodrigo Hipolito, 2025 - Todos os direitos reservados.</span>
 </footer>
 
-<!-- Watson Assistant Chatbot -->
 <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4",
-    region: "us-east",
-    serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f",
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
+document.getElementById("theme-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("light-theme");
+});
 </script>
 </body>
 </html>
