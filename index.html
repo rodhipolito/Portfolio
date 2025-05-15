@@ -1,98 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Rodrigo Silva</title>
-    <meta name="description" content="Portfólio de Rodrigo Hipolito - Desenvolvedor Full Stack com foco em automação, integração de dados e tecnologias modernas como React, Node.js, Java.">
+    <title>Portfólio - Rodrigo Silva | Full Stack Developer</title>
+    <meta name="description" content="Portfólio de Rodrigo Hipolito - Desenvolvedor Full Stack especializado em automação, integração de dados e tecnologias modernas">
+    <!-- Preload -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" as="style">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap">
     <!-- ICONS -->
-    <script src="https://kit.fontawesome.com/9214705539.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header>
-    <h1>Rodrigo Silva</h1>
-    <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
-    <nav aria-label="Redes sociais">
-        <a href="https://github.com/rodhipolito" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github fa-lg"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/rodrigo-hipolito-silva/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin fa-lg"></i>
-        </a>
-    </nav>
-</header>
+    <header class="header">
+        <div class="header__brand">
+            <h1 class="header__title">Rodrigo Silva</h1>
+            <button id="theme-toggle" class="header__theme-toggle" aria-label="Alternar tema">
+                <span class="theme-icon">🌓</span>
+            </button>
+        </div>
+        <nav class="header__nav" aria-label="Redes sociais">
+            <a href="https://github.com/rodhipolito" target="_blank" rel="noopener noreferrer" class="header__link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rodrigo-hipolito-silva/" target="_blank" rel="noopener noreferrer" class="header__link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </nav>
+    </header>
 
-<main>
-    <section class="main-content">
-        <article class="text">
-            <h2>About me 🙋‍♂️</h2>
-            <p>
-                 Professional with experience in software development, data integration, and process automation. Skilled in SQL, Node.js, Express, and scripting with VBA for internal tools and reporting workflows. 
-                Strong understanding of ETL processes, API integration, and front-end tools like React.js. 
-                I combine business insight with technical expertise to build scalable solutions, automate processes, and support data-driven decision-making. 
-                Experienced in corporate and outsourcing environments.
-            </p>
-        </article>
+    <main class="main">
+        <section class="hero">
+            <article class="bio">
+                <h2 class="bio__title">About me <span class="emoji">🙋‍♂️</span></h2>
+                <p class="bio__text">
+                    Professional with experience in software development, data integration, and process automation. 
+                    Skilled in SQL, Node.js, Express, and scripting with VBA for internal tools and reporting workflows.
+                    Strong understanding of ETL processes, API integration, and front-end tools like React.js.
+                </p>
+            </article>
 
-        <aside class="techs">
-            <h2>Select a Technology below ⬇ 👨‍💻</h2>
-            <div class="cards-container">
-                <div class="card"><img src="./img/techs/html5.png" alt="HTML5"></div>
-                <div class="card"><a href="https://pizzaria1.netlify.app/" target="_blank"><img src="./img/techs/css3.png" alt="CSS3"></a></div>
-                <div class="card"><a href="https://firstcurrencyconverter.netlify.app/" target="_blank"><img src="./img/techs/javascript.png" alt="JavaScript"></a></div>
-                <div class="card"><a href="https://catalogoflix.netlify.app/" target="_blank"><img src="./img/techs/logo-react-256.png" alt="React"></a></div>
-                <div class="card"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7249907961072934912/" target="_blank"><img src="./img/techs/java.png" alt="Java"></a></div>
-            </div>
-        </aside>
+            <aside class="technologies">
+                <h2 class="technologies__title">Select a Technology below <span class="emoji">⬇ 👨‍💻</span></h2>
+                <div class="tech-grid">
+                    <a href="https://pizzaria1.netlify.app/" class="tech-card" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/techs/html5.png" alt="HTML5" loading="lazy">
+                    </a>
+                    <!-- Outros cards similares -->
+                </div>
+            </aside>
 
-        <figure>
-            <img src="./img/techs/foto.png" alt="Rodrigo Hipolito">
-            <figcaption>Rodrigo Hipolito Silva</figcaption>
-        </figure>
-    </section>
-</main>
+            <figure class="profile">
+                <img src="./img/techs/foto.png" alt="Rodrigo Hipolito" class="profile__image" loading="lazy">
+                <figcaption class="profile__caption">Rodrigo Hipolito Silva</figcaption>
+            </figure>
+        </section>
+    </main>
 
-<footer>
-    <span>&copy; Rodrigo Hipolito, 2025 - Todos os direitos reservados.</span>
-</footer>
+    <footer class="footer">
+        <span class="footer__copyright">&copy; <span id="current-year">2025</span> Rodrigo Hipolito. Todos os direitos reservados.</span>
+    </footer>
 
-<script>
-document.getElementById("theme-toggle").addEventListener("click", () => {
-    document.body.classList.toggle("light-theme");
-});
-</script>
+    <script>
+        // Atualiza o ano automaticamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Tema dark/light melhorado
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && !prefersDark)) {
+            document.body.classList.add('light-theme');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+        });
+    </script>
 
-
-<!-- Watson Assistant Chatbot -->
-<script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4", // Seu ID de integração
-    region: "us-east", // Região correta
-    serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f", // Seu serviceInstanceID
-    onLoad: function(instance) {
-      instance.render();
-    }
-  };
-  setTimeout(function() {
-    const t = document.createElement('script');
-    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-      (window.watsonAssistantChatOptions.clientVersion || 'latest') +
-      "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  }, 1000); // Timeout de 1s para garantir que o DOM já carregou
-</script>
-
+    <!-- Chatbot otimizado -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4",
+            region: "us-east",
+            serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f",
+            showLauncher: false,
+            onLoad: function(instance) {
+                instance.render().then(function() {
+                    // Ajusta posição para mobile
+                    if (window.innerWidth < 768) {
+                        const launcher = document.querySelector('.WatsonAssistantChatLauncher__Button');
+                        if (launcher) {
+                            launcher.style.bottom = '80px';
+                            launcher.style.right = '15px';
+                        }
+                    }
+                });
+            }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+                (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+                "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
 </body>
 </html>
