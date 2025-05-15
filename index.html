@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Rodrigo Hipólito - Desenvolvedor Web Full Stack">
     <title>Portfólio - Developer Rodrigo</title>
     <!--CSS-->
     <link rel="stylesheet" href="./css/reset.css">
@@ -32,7 +33,7 @@
     </nav>
 </header>
 
-<main>
+<main class="container">
     <section class="main-content">
         <article class="text">
             <h2>About me 🙋‍♂️</h2>
@@ -72,12 +73,12 @@
                 </div>
             </div>
         </aside>
-    </section>
 
-    <figure>
-        <img src="./img/techs/foto.png" alt="Foto de Rodrigo Hipolito">
-        <figcaption>Rodrigo Hipolito Silva</figcaption>
-    </figure>
+        <figure>
+            <img src="./img/techs/foto.png" alt="Foto de Rodrigo Hipolito">
+            <figcaption>Rodrigo Hipolito Silva</figcaption>
+        </figure>
+    </section>
 </main>
 
 <footer>
@@ -87,9 +88,9 @@
 <!-- Watson Assistant Chatbot -->
 <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4", // The ID of this integration.
-    region: "us-east", // The region your integration is hosted in.
-    serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f", // The ID of your service instance.
+    integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4",
+    region: "us-east",
+    serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f",
     onLoad: async (instance) => { await instance.render(); }
   };
   setTimeout(function(){
