@@ -77,20 +77,16 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
 <!-- Watson Assistant Chatbot -->
 <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "f6514a0f-c4e8-4301-a40a-cc3fa915dbe4", // Seu ID de integração
-    region: "us-east", // Região correta
-    serviceInstanceID: "a3c8a93b-26fc-459a-9e8f-c4af3889030f", // Seu serviceInstanceID
-    onLoad: function(instance) {
-      instance.render();
-    }
+    integrationID: "dcf4590a-8abc-4f03-8e99-bd33572b2f89", // The ID of this integration.
+    region: "eu-gb", // The region your integration is hosted in.
+    serviceInstanceID: "12b251c8-de1a-4bc7-bf0b-a206c18c71fa", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
   };
-  setTimeout(function() {
-    const t = document.createElement('script');
-    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-      (window.watsonAssistantChatOptions.clientVersion || 'latest') +
-      "/WatsonAssistantChatEntry.js";
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
     document.head.appendChild(t);
-  }, 1000); // Timeout de 1s para garantir que o DOM já carregou
+  });
 </script>
 
 </body>
