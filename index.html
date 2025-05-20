@@ -90,36 +90,5 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
   });
 </script>
 
-<!-- Efeito de linhas interativas com mouse -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-<script>
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: true, zIndex: -1 },
-    background: {
-      color: "#1d1d80" // Altere ou remova para manter seu tema
-    },
-    particles: {
-      number: { value: 0 },
-      color: { value: "#ff99ff" },
-      move: { enable: true, speed: 0.5 }
-    },
-    interactivity: {
-      events: {
-        onHover: { enable: true, mode: "trail" }
-      },
-      modes: {
-        trail: {
-          delay: 0.005,
-          quantity: 1,
-          particles: {
-            color: { value: "#ff99ff" },
-            links: { enable: true, distance: 150, opacity: 0.5 },
-            move: { speed: 2 }
-          }
-        }
-      }
-    }
-  });
-</script>
 </body>
 </html>
