@@ -9,7 +9,6 @@ O design é **responsivo**, proporcionando ótima experiência de navegação em
 O site apresenta seções organizadas para exposição de projetos, habilidades técnicas e informações de contato, facilitando a visualização do perfil profissional.  
 Ideal para profissionais que buscam uma presença digital prática e elegante.
 
-Além disso, conta com uma integração de um **Chatbot** bem divertida e interessante.
 
 ---
 
